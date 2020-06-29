@@ -38,11 +38,7 @@ RSpec.describe "posts/edit", type: :feature do
       expect(find("textarea[name=content]").value).to eq(invalid_attributes[:content])
     end
 
-    it "has error class on bad fields" do
-      expect(page).to have_css(".field_with_errors input[name=title]")
-      expect(page).to have_css(".field_with_errors input[name=category]")
-      expect(page).to have_css(".field_with_errors textarea[name=content]")
-    end
+    
   end
 end
 
